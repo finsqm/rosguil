@@ -1,18 +1,44 @@
+body, html {
+    height: 100%;
+}
+
 body {
-  background-color: black;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Futura' !important;
+  margin-top: 0px;
+  background-color: black !important;
+  color: white !important;
 }
 
-.header {
-  text-align: center;
-  color: white;
-  font-size: 70px;
-  margin: 50px 300px 50px 300px;
-  word-wrap: break-word;
+h1 {
+  font-size: 50px !important;
 }
 
-.cast {
+@font-face {
+  font-family: 'Futura';
+  src: url(res/fonts/Futura\ Medium.ttf) format("truetype");
+}
+
+.header-text {
   text-align: center;
+}
+
+.skull {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#left-skull {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.skull-text {
+  text-align: center;
+  line-height: 500%;
 }
